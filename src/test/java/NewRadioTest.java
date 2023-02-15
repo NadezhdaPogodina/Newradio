@@ -114,11 +114,11 @@ public class NewRadioTest {
     public void nextVolume() {
         NewRadio radio = new NewRadio();
 
-        radio.setCurrentRadioVolume(6);
+        radio.setCurrentRadioVolume(7);
 
-        radio.nextRadioVolume();
+        radio.aboveNextRadioVolume();
 
-        int expected = 7;
+        int expected = 8;
         int actual = radio.getCurrentRadioVolume();
         Assertions.assertEquals(expected, actual);
     }
@@ -141,7 +141,7 @@ public class NewRadioTest {
     public void beforeZeroRadioVolume() {
         NewRadio radio = new NewRadio();
 
-        radio.setCurrentRadioVolume(-1);
+        radio.setCurrentRadioVolume(1);
         radio.prevRadioVolume();
 
 
