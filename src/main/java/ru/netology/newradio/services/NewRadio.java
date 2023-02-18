@@ -42,12 +42,6 @@ public class NewRadio {
     }
 
 
-    public int getCurrentRadioVolume() {
-
-        return currentRadioVolume;
-    }
-
-
     public void aboveNextRadioVolume() {
 
         currentRadioVolume = currentRadioVolume + 1;
@@ -58,6 +52,12 @@ public class NewRadio {
 
         currentRadioVolume = currentRadioVolume - 1;
 
+    }
+
+
+    public int getCurrentRadioVolume() {
+
+        return currentRadioVolume;
     }
 
     public void setCurrentRadioVolume(int newCurrentRadioVolume) {
