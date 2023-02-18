@@ -47,6 +47,19 @@ public class NewRadio {
         return currentRadioVolume;
     }
 
+
+    public void aboveNextRadioVolume() {
+
+        currentRadioVolume = currentRadioVolume + 1;
+
+    }
+
+    public void prevRadioVolume() {
+
+        currentRadioVolume = currentRadioVolume - 1;
+
+    }
+
     public void setCurrentRadioVolume(int newCurrentRadioVolume) {
 
         if (newCurrentRadioVolume > 10) {
@@ -61,18 +74,6 @@ public class NewRadio {
         currentRadioVolume = newCurrentRadioVolume;
     }
 
-
-    public void aboveNextRadioVolume() {
-
-        currentRadioVolume = currentRadioVolume + 1;
-
-    }
-
-    public void prevRadioVolume() {
-
-        currentRadioVolume = currentRadioVolume - 1;
-
-    }
 }
 
 
