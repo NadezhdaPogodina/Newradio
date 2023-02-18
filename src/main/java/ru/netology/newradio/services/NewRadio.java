@@ -4,6 +4,8 @@ public class NewRadio {
 
     private int currentRadioStation;
 
+    private int currentRadioVolume;
+
     public void next() {
         if (currentRadioStation != 9) {
             currentRadioStation = currentRadioStation + 1;
@@ -39,8 +41,6 @@ public class NewRadio {
 
     }
 
-
-    private int currentRadioVolume;
 
     public int getCurrentRadioVolume() {
 
